@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Secure Checkout</h1>
+        <a href="cart.html" class="back-link">← Back to Cart</a>
+    </header>
+    <main class="payment-container">
+        <form id="payment-form" action="thankyou.html" method="get">
+            <div class="form-section">
+                <h2>Shipping Information</h2>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="text" name="address" placeholder="Address" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="zip" placeholder="Zip Code" required>
+            </div>
+            <div class="form-section">
+                <h2>Payment Details</h2>
+                <input type="text" name="card-number" placeholder="Card Number" required>
+                <input type="text" name="exp-date" placeholder="MM/YY" required>
+                <input type="text" name="cvv" placeholder="CVV" required>
+            </div>
+            <button type="submit" class="pay-now-button">Pay Now</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Aesthetic Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
